@@ -1,0 +1,5 @@
+# Install builds compatible with your OS and device.
+ultralytics
+opencv-python
+# For older Roboflow dataset download scripts:
+# roboflow
