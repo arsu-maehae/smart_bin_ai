@@ -87,6 +87,23 @@ A local broker and same-network access are required. Servo motors may need an ex
 - Firmware tracks one active servo; back-to-back commands may not close the previous lid correctly. Keep commands separated or add proper queueing/interlocking.
 - No benchmark scores or end-to-end test results are claimed in this import.
 
+
+## Project photos and detection examples
+
+The following images are examples captured from the original Smart Bin AI project. Scores shown in the screenshots are individual detection confidence values, **not overall model accuracy**.
+
+| Organic (leaf, 0.8) | Recycle (aluminum can, 0.6) |
+| --- | --- |
+| ![YOLO detection of an organic leaf](docs/images/organic-detection.jpg) | ![YOLO detection of a recyclable can](docs/images/recycle-detection.jpg) |
+
+| General (packaging, 0.8) | Hazardous (electrical adapter, 0.5) |
+| --- | --- |
+| ![YOLO detection of general waste](docs/images/general-detection.jpg) | ![YOLO detection of hazardous waste](docs/images/hazardous-detection.jpg) |
+
+### Project exhibition
+
+![Smart Bin AI prototype and project exhibition booth](docs/images/project-exhibition.jpg)
+
 ## Tech stack
 
 Python · Ultralytics YOLOv8 · OpenCV · ONNX/NCNN · Raspberry Pi · ESP32 · Arduino · PlatformIO · MQTT · PubSubClient · ESP32Servo · HC-SR04 · LINE Messaging API
